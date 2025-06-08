@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>설모의 포트폴리오</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      padding: 0;
+    }
+
+    header {
+      background-color: #00b894;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background-color: #eee;
+      padding: 10px 0;
+    }
+
+    nav button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #00b894;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    nav button:hover {
+      background-color: #019875;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      background: white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #888;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>설모의 포트폴리오</h1>
+    <p>디지털 시계와 공학용 계산기를 소개합니다</p>
+  </header>
+
+  <nav>
+    <button onclick="document.getElementById('clockSection').scrollIntoView({behavior: 'smooth'})">디지털 시계</button>
+    <button onclick="document.getElementById('calcSection').scrollIntoView({behavior: 'smooth'})">공학용 계산기</button>
+  </nav>
+
+  <section id="clockSection">
+    <h2>🕒 디지털 시계</h2>
+    <iframe src="./clock.html" title="디지털 시계"></iframe>
+  </section>
+
+  <section id="calcSection">
+    <h2>🧮 공학용 계산기</h2>
+    <iframe src="./calculator.html" title="공학용 계산기"></iframe>
+  </section>
+
+  <footer>
+    ⓒ 2025 설모 – 모든 콘텐츠는 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> 라이선스로 배포됩니다.
+  </footer>
+
+</body>
+</html>
